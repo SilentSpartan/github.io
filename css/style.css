@@ -300,6 +300,17 @@ and (max-width : 1199px) {
     cursor: pointer;
 }
 
+.section-modal .close-modals {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    bottom: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 .section-modal .close-modal:hover {
     opacity: .3;
 }
@@ -319,29 +330,6 @@ and (max-width : 1199px) {
     z-index: 1052;
     width: 1px;
     height: 75px;
-    background-color: #222;
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
-
-.section-modal .close-modal .ar {
-    z-index: 1051;
-    width: 1px;
-    height: 75px;
-    bottom: 10px;
-    margin-left: 35px;
-    background-color: #222;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.section-modal .close-modal .ar .sl {
-    z-index: 1052;
-    width: 1px;
-    height: 75px;
-    bottom: 10px;
     background-color: #222;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
