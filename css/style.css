@@ -303,7 +303,7 @@ and (max-width : 1199px) {
 .section-modal .close-modals {
     position: absolute;
     top: 25px;
-    right: 25px;
+    right: -25px;
     width: 75px;
     height: 75px;
     bottom: 10px;
