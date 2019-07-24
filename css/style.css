@@ -99,7 +99,7 @@ fieldset[disabled] .btn-primary.active {
     color: #666 !important;
     //font-style: italic;
     font-size: 28px;
-    font-family: 'Audiowide',Helvetica,Arial,sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-transform: none;
 }
 
@@ -183,7 +183,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .menu-item a p {
-    font-family: 'Audiowide', sans-serif;
+    font-family: 'Scope One', serif;
     font-weight: 300;
     font-size: 20px;
 }
