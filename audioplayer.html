@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width">
+    <title>SilentSpartan - Music Player</title>
+    
+    <!-- Insert to your webpage before the </head> -->
+    <script src="audioplayerengine/jquery.js"></script>
+    <script src="audioplayerengine/amazingaudioplayer.js"></script>
+    <link rel="stylesheet" type="text/css" href="audioplayerengine/initaudioplayer-1.css">
+    <script src="audioplayerengine/initaudioplayer-1.js"></script>
+    <!-- End of head section HTML codes -->
+    <style>
+    body{background:
+linear-gradient(black, hsl(180,50%,35%) 60%, #b0a089);
+background-repeat: no-repeat;
+    background-attachment: fixed;} </style>
+    
+</head>
+<body>
+<div style="margin:12px auto;">
+    
+    <!-- Insert to your webpage where you want to display the audio player -->
+    <div id="amazingaudioplayer-1" style="display:block;position:relative;width:300px;height:164px;margin:0px auto 0px;">
+        <ul class="amazingaudioplayer-audios" style="display:none;">
+            <li data-artist="The Baker Brothers" data-title="Breathe Fire" data-album="Hear No Evil" data-info="" data-image="audios/1212.jpg" data-duration="273">
+                <div class="amazingaudioplayer-source" data-src="audios/07. Baker Brothers - Breathe Fire.mp3" data-type="audio/mpeg" />
+            </li>
+            <li data-artist="The Baker Brothers" data-title="Cherry Wine" data-album="Hear No Evil" data-info="" data-image="" data-duration="249">
+                <div class="amazingaudioplayer-source" data-src="audios/03. Baker Brothers - Cherry Wine.mp3" data-type="audio/mpeg" />
+            </li>
+        </ul>
+        <div class="amazingaudioplayer-engine"><a href="http://amazingaudioplayer.com" title="html5 mp3 player">html5 music player</a></div>
+    </div>
+    <!-- End of body section HTML codes -->
+
+</div>
+</body>
+</html>
