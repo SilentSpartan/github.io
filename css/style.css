@@ -99,7 +99,7 @@ fieldset[disabled] .btn-primary.active {
     color: #666 !important;
     //font-style: italic;
     font-size: 28px;
-    font-family: 'Audiowide';
+    font-family: 'Audiowide',Helvetica,Arial,sans-serif;
     text-transform: none;
 }
 
