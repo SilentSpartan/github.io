@@ -1,5 +1,1 @@
-# github.io
-
----
-permalink: /index.html
----
+# SilentSpartan.com
