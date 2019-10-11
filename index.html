@@ -95,7 +95,7 @@ $(function() {
                 <div class="row">
                     <div class="col-md-12">
                         <div class="logo text-center">
-                            <h1>SilentSpartan.</h1>
+                            <h1>SilentSpartan</h1>
                             <span>Web Designer, Gamer, Asshole</span>
                         </div>
                     </div>
@@ -1320,7 +1320,7 @@ $(function() {
         console.log('ready');
         $('a.tab2').on('click', function(){
             console.log('clicked');
-            $('.tab-pane#tab-2').load($('.tab-pane#tab-2 > *'));
+            $('.tab-pane#tab-2').load($(window.location.href + '.tab-pane#tab-2 > *'));
         });
     });
 </script>
