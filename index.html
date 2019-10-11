@@ -1317,9 +1317,10 @@ $(function() {
 
 <script>
     $(document).on('ready', function() {
-        $('a[href="tab-2"]').on('click', function(){
+        console.log('ready');
+        $('a.tab2').on('click', function(){
             console.log('clicked');
-            $('.tab-pane#tab-2').css('min-height','220px');
+            $('.tab-pane#tab-2').load($('.tab-pane#tab-2 > *'));
         });
     });
 </script>
