@@ -515,7 +515,7 @@ $(function() {
                         
                                 <ul class="nav nav-tabs nav-justified" role="tablist">
                                     <li class="active"><a href="#tab-1" role="tab" data-toggle="tab" aria-expanded="true">Live</a></li>
-                                    <li class=""><a href="#tab-2" class="tab2" role="tab" data-toggle="tab" aria-expanded="false">Past Broadcasts</a></li>
+                                    <li class=""><a href="#tab-2" role="tab" data-toggle="tab" aria-expanded="false">Past Broadcasts</a></li>
                                 </ul>
 
                                 <div class="tab-content">
@@ -1317,8 +1317,7 @@ $(function() {
 
 <script>
     $(document).on('ready', function() {
-        console.log('ready');
-        $('a.tab2').on('click', function(){
+        $('a[href="tab-2"]').on('click', function(){
             console.log('clicked');
             $('yt-pl').addClass('elfsight-app-9e80e012-ecf8-4360-899c-2190a9018af3');
         });
