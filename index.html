@@ -79,13 +79,6 @@ $(function() {
 });
 </script>
 
-<script>
-     $(document).on('ready', function() {
-        $('a[href="tab-2"]').on('click', function(){
-            $('.tab-pane#tab-2').css('min-height','220px');
-        });
-    });
-</script>
 
 
 
@@ -102,7 +95,7 @@ $(function() {
                 <div class="row">
                     <div class="col-md-12">
                         <div class="logo text-center">
-                            <h1>SilentSpartan.</h1>
+                            <h1>SilentSpartan</h1>
                             <span>Web Designer, Gamer, Asshole</span>
                         </div>
                     </div>
@@ -1319,6 +1312,18 @@ $(function() {
     
     
 <img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
+
+
+
+<script>
+    $(document).on('ready', function() {
+        $('a[href="tab-2"]').on('click', function(){
+            console.log('clicked');
+            $('.tab-pane#tab-2').css('min-height','220px');
+        });
+    });
+</script>
+
 
 </body>
 </html>
