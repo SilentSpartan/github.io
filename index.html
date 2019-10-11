@@ -515,7 +515,7 @@ $(function() {
                         
                                 <ul class="nav nav-tabs nav-justified" role="tablist">
                                     <li class="active"><a href="#tab-1" role="tab" data-toggle="tab" aria-expanded="true">Live</a></li>
-                                    <li class=""><a href="#tab-2" class="tab2" role="tab" data-toggle="tab" aria-expanded="false">Past Broadcasts</a></li>
+                                    <li class=""><a href="#tab-2" role="tab" data-toggle="tab" aria-expanded="false">Past Broadcasts</a></li>
                                 </ul>
 
                                 <div class="tab-content">
@@ -1313,17 +1313,6 @@ $(function() {
     
 <img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;"><img id="hzDownscaled" style="position: absolute; top: -10000px;">
 
-
-
-<script>
-    $(document).on('ready', function() {
-        console.log('ready');
-        $('a.tab2').on('click', function(){
-            console.log('clicked');
-            $('.tab-pane#tab-2').load($(window.location.href + '.tab-pane#tab-2 > *'));
-        });
-    });
-</script>
 
 
 </body>
