@@ -17,13 +17,13 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false;
-        mediaPath = 'https://archive.org/download/mythium/',
+        mediaPath = '/music',
         extension = '',
         tracks = [{
             "track": 1,
             "name": "All This Is -- Joe L.'s Studio",
             "length": "02:46",
-            "file": "JLS_ATI"
+            "file": "dojocuts.mp3"
         }, {
             "track": 2,
             "name": "The Forsaken -- Broadwing Studio (Final Mix)",
