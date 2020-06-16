@@ -1,9 +1,39 @@
 <html>
 
 <head>
+
+<style>
+	.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
 </head>
 <body>
-<img src="pyro.png"></img>
+
+<div class="row">
+  <div class="column"><img src="pyro.png"></img></div>
+  <div class="column"><center>Famous Pyro Quotes in Audio Form!<br>
+<audio controls preload="metadata" style=" width:300px;">
+	<source src="https://www.freesoundeffects.com/mp3_466310.mp3" type="audio/mpeg">
+</audio><br />
+
+  </div>
+</div>
+
+
+
+
+
+
 </body>
 
 
