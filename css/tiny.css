@@ -1,0 +1,252 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+	outline:none;
+}
+a{ 
+	text-decoration: none; 
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#hap-wrapper{
+	position: relative;
+	margin:100px 0 0 50px;
+	height:26px;
+	display:inline-block;
+}
+#hap-wrapper2{
+	position: relative;
+	margin:100px 0 0 50px;
+	height:26px;
+	display:inline-block;
+}
+#hap-wrapper3{
+	position: relative;
+	margin:100px 0 0 50px;
+	height:26px;
+	display:inline-block;
+}
+
+.hap-light{
+	border: 1px solid #cbcbcb;
+}
+
+
+.hap-player-holder{
+	display: flex;
+	flex-direction:row;
+	position:relative;
+	height: 100%;
+}
+.hap-dark .hap-player-holder {
+	background: rgb(76,76,76); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	box-shadow: 1px 1px 15px #222;
+}
+.hap-light .hap-player-holder {
+	background-image: -moz-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f1f1f1), color-stop(51%,#e1e1e1), color-stop(100%,#f6f6f6));
+    background-image: -webkit-linear-gradient(top, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%);
+    background-image: -o-linear-gradient(top, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%);
+    background-image: -ms-linear-gradient(top, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%);
+    background-image: linear-gradient(to bottom, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%);
+    box-shadow: 1px 1px 1px #ddd;
+}
+
+
+.hap-btn{
+	display: none;
+	height:100%;
+}
+.hap-contr-btn{
+	box-sizing: border-box;  
+	position:relative;
+	width:30px;	
+	height:100%;
+	border-right: 1px solid #555;    
+}
+.hap-dark .hap-contr-btn svg{
+	color:#ccc;
+}
+.hap-dark .hap-btn:hover svg,
+.hap-dark .hap-contr-btn:hover > svg,
+.hap-dark .hap-contr-btn-hover svg{
+	color:#fff!important;
+} 
+.hap-light .hap-contr-btn svg{
+	color:#666;
+}
+.hap-light .hap-btn:hover svg,
+.hap-light .hap-contr-btn:hover > svg,
+.hap-light .hap-contr-btn-hover svg{
+	color:#fff!important;
+} 
+.hap-contr-btn svg{
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	height: 13px;
+	fill:currentColor;
+	transition: color .1s ease-out;
+}
+
+.hap-volume-wrapper{
+	position:relative;
+	width:30px;	
+	height:100%;
+}
+.hap-volume-toggle{
+	border-right:none!important; 
+}
+.hap-volume-wrapper:hover .hap-volume-seekbar{
+	display: block;
+}
+.hap-volume-seekbar{
+	position:absolute;
+	top:-80px;
+	left:0;
+	width:30px;
+	height:80px;
+	display:none;
+	cursor: pointer;
+	touch-action: none;
+}
+.hap-dark .hap-volume-seekbar{
+	background: rgb(125,126,125); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.hap-light .hap-volume-seekbar{
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    border: 1px solid #cbcbcb;
+}
+.hap-volume-bg{
+	position:absolute;
+	width:3px;
+	height:60px;
+	left:13px;
+	bottom:10px;
+}
+.hap-dark .hap-volume-bg{
+	background:#888;
+}
+.hap-light .hap-volume-bg{
+	background:#888;
+}
+.hap-volume-level{
+	position:absolute;
+	width:100%;
+	height:30px;
+	left:0;
+	bottom:0;
+}
+.hap-dark .hap-volume-level{
+	background:#fff;
+}
+.hap-light .hap-volume-level{
+	background:#fff;
+}
+
+.hap-seekbar{
+	position:relative;
+	height:100%;
+	width: 150px;
+	touch-action: none;
+	cursor: pointer;
+}
+.hap-progress-bg{
+	position:absolute;
+	height:3px;
+	top:12px;
+	left:10px;
+	right:10px;
+}
+.hap-dark .hap-progress-bg{
+	background:#666;
+}
+.hap-light .hap-progress-bg{
+	background:#666;
+}
+.hap-load-level{
+	position:absolute;
+	height:100%;
+	top:0;
+	left:0;
+	right:0;
+}
+.hap-dark .hap-load-level{
+	background:#888;
+}
+.hap-light .hap-load-level{
+	background:#888;
+}
+.hap-progress-level{
+	position:absolute;
+	height:100%;
+	top:0;
+	left:0;
+	right:0;
+}
+.hap-dark .hap-progress-level{
+	background:#fff;
+}
+.hap-light .hap-progress-level{
+	background:#fff;
+}
+
+.hap-tooltip{
+	position:absolute;
+	text-align:center;
+	z-index:10000;
+	pointer-events:none;
+	display:none;
+	font-size:12px!important;
+	padding:2px 5px !important;
+	line-height:20px !important;
+	white-space:nowrap;
+}
+.hap-dark .hap-tooltip{
+	background: #333;
+	border:1px solid #444;
+	box-shadow: 1px 1px 3px #111;
+	color:#fff!important;
+}
+.hap-light .hap-tooltip{
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	box-shadow: 1px 1px 1px #ddd;
+	color:#666!important;
+	border:1px solid #ccc;
+}
+
+.hap-youtube-holder,
+.hap-iframe-blocker{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}	
+.hap-media{
+	width: 100%;
+    height: 100%;
+    position:absolute;
+    user-select: none;
+    visibility: visible;
+    top:0;
+    left:0;
+    max-width:none!important;
+}
